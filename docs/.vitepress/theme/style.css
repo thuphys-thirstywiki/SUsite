@@ -23,3 +23,9 @@
   border-color: var(--vp-c-brand-soft);
   transition: border-color 0.25s;
 }
+
+/* 编辑链接已移至顶部（doc-before 插槽），隐藏底部原有的，
+   保留底部的"最后更新"时间 */
+.VPDocFooter .edit-link {
+  display: none;
+}
