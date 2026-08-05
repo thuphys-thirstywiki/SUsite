@@ -40,6 +40,7 @@ export default defineConfig({
             { text: '关于本站', link: '/guide/' },
             { text: 'Markdown 写作指南', link: '/guide/markdown' },
             { text: '示例词条（模板）', link: '/guide/sample-entry' },
+            { text: '投稿与 Pull Request', link: '/guide/pr-guide' },
             { text: '贡献与部署', link: '/guide/contribute' },
           ],
         },

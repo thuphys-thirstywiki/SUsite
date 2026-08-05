@@ -20,7 +20,7 @@ Wiki 采用 Git 管理 + 自动部署：以 Markdown 编写词条，提交到 Gi
 2. 新建一个 `.md` 文件，文件名用英文短横线，如 `docs/activities/mid-autumn.md`；
 3. 参考 [示例词条（模板）](/guide/sample-entry) 编写内容；
 4. 将页面加入侧边栏（见下文），或让链接从其他词条指向它；
-5. 管理员直接推送到 `main`；成员则推送到新分支并提交 Pull Request。
+5. 管理员直接推送到 `main`；成员则推送到新分支并提交 Pull Request（详细步骤见 [投稿与 Pull Request 指引](/guide/pr-guide)）。
 
 ## 本地预览
 
