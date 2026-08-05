@@ -1,0 +1,16 @@
+{
+  "name": "su-wiki",
+  "version": "0.1.0",
+  "private": true,
+  "description": "物理系学生会 Wiki —— 基于 VitePress 的 Markdown 维基",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
+  }
+}
