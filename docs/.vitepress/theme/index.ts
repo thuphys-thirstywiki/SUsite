@@ -8,7 +8,7 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'doc-before': () => h(EditLinkTop),
+      'aside-top': () => h(EditLinkTop),
     })
   },
 } satisfies Theme
