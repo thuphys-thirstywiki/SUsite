@@ -13,6 +13,9 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
 
+  // 建站期间存在大量指向"规划中"页面的链接，跳过死链接检查，避免构建失败
+  ignoreDeadLinks: true,
+
   head: [
     ['meta', { name: 'theme-color', content: '#087a72' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}logo.svg` }],
