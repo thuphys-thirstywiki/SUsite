@@ -16,8 +16,8 @@ Wiki 采用 Git 管理 + 自动部署：以 Markdown 编写词条，提交到 Gi
 
 ## 添加一个新词条
 
-1. 在仓库的 `docs/` 下找到对应分类目录（如 `org/`、`activities/`）；
-2. 新建一个 `.md` 文件，文件名用英文短横线，如 `docs/activities/mid-autumn.md`；
+1. 在仓库的 `docs/wiki/` 下找到对应分类目录（如 `activities/`、`artifacts/`）；
+2. 新建一个 `.md` 文件，文件名用英文短横线，如 `docs/wiki/activities/mid-autumn.md`；
 3. 参考 [示例词条（模板）](/guide/sample-entry) 编写内容；
 4. 将页面加入侧边栏（见下文），或让链接从其他词条指向它；
 5. 管理员直接推送到 `main`；成员则推送到新分支并提交 Pull Request（详细步骤见 [投稿与 Pull Request 指引](/guide/pr-guide)）。
@@ -38,8 +38,8 @@ npm run docs:build    # 生成静态站点到 docs/.vitepress/dist
 npm run docs:preview  # 本地预览构建产物
 ```
 
-- 推送代码到 GitHub `main` 分支后，仓库中的 GitHub Actions 工作流会自动构建并部署到 Pages；
-- 部署配置位于 `.github/workflows/deploy.yml`，部署路径由仓库名决定。
+- 推送代码到 GitHub `main` 分支后，Cloudflare Pages 会自动构建并部署；
+- `.github/workflows/deploy.yml` 可作为显式部署工作流，需在仓库中配置 `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID` 两个 Actions Secret，以及 `CLOUDFLARE_PAGES_PROJECT` Actions Variable。
 
 ## 修改侧边栏 / 导航
 
@@ -52,12 +52,12 @@ npm run docs:preview  # 本地预览构建产物
 
 ```ts
 sidebar: {
-  '/activities/': [
+  '/wiki/activities/': [
     {
-      text: '活动百科',
+      text: '活动',
       items: [
-        { text: '概览', link: '/activities/' },
-        { text: '中秋晚会', link: '/activities/mid-autumn' },   // 新增
+        { text: '概览', link: '/wiki/activities/' },
+        { text: '中秋晚会', link: '/wiki/activities/mid-autumn' },   // 新增
       ],
     },
   ],

@@ -1,9 +1,9 @@
 /* 品牌色：偏物理的蓝紫，可整体调整 */
 :root {
-  --vp-c-brand-1: #5b4fae;
-  --vp-c-brand-2: #6e63c4;
-  --vp-c-brand-3: #453a8f;
-  --vp-c-brand-soft: rgba(91, 79, 174, 0.16);
+  --vp-c-brand-1: #087a72;
+  --vp-c-brand-2: #0a9488;
+  --vp-c-brand-3: #05625d;
+  --vp-c-brand-soft: rgba(8, 122, 114, 0.14);
 
   --vp-font-family-base: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
     'Noto Sans SC', 'Source Han Sans SC', system-ui, -apple-system, 'Segoe UI',
@@ -12,10 +12,10 @@
 
 /* 深色模式下的品牌色 */
 .dark {
-  --vp-c-brand-1: #8f87d1;
-  --vp-c-brand-2: #a39ce0;
-  --vp-c-brand-3: #6e63c4;
-  --vp-c-brand-soft: rgba(143, 135, 209, 0.16);
+  --vp-c-brand-1: #47c4b4;
+  --vp-c-brand-2: #6bd4c7;
+  --vp-c-brand-3: #24a394;
+  --vp-c-brand-soft: rgba(71, 196, 180, 0.16);
 }
 
 /* 首页特性卡片 hover 动效 */
@@ -30,3 +30,11 @@
 .VPDoc.has-aside .VPDocFooter .edit-link {
   display: none;
 }
+
+.document-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 44px 0 12px; padding-top: 24px; border-top: 1px solid var(--vp-c-divider); }
+.link-group h2 { margin: 0 0 10px; font-size: 15px; color: var(--vp-c-text-1); }
+.link-group a { display: block; margin: 7px 0; padding: 9px 11px; color: var(--vp-c-text-1); background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-divider); border-radius: 5px; }
+.link-group a:hover { border-color: var(--vp-c-brand-1); }
+.link-group strong { display: block; font-size: 14px; }
+.link-group span { display: block; margin-top: 2px; font-size: 12px; color: var(--vp-c-text-2); }
+@media (max-width: 640px) { .document-links { grid-template-columns: 1fr; } }

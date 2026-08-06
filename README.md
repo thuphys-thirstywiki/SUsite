@@ -1,6 +1,13 @@
-# 物理系学生会 Wiki
+# 物理系学生会文档库
 
 清华大学物理系学生会的知识库与工作手册，基于 [VitePress](https://vitepress.dev/zh/) 构建。
+
+文档分为两套互补结构：
+
+- **Wiki**：以文档为中心，按活动、可复用素材与组织知识归档，服务维护和交接；
+- **人员文档**：以读者为中心，按身份提供任务引导，并链接到 Wiki 的源文档。
+
+页面底部的「关联文档」与「被引用于」组成双向链接。新增或调整页面时，应同时更新这两处关系。
 
 > 线上地址：https://thu-phys.com/
 
@@ -24,13 +31,13 @@
 
 ```
 docs/
-├─ index.md              # 首页
-├─ guide/                # 使用指南（写作规范、示例模板）
-├─ tech/                 # 技术扫盲（Git / 命令行 / 编辑实战）
-├─ org/                  # 组织与制度
-├─ activities/           # 活动百科
-├─ study/                # 学习指南
-├─ life/                 # 生活指南
+├─ index.md              # 首页与两个入口
+├─ wiki/                 # 文档中心的知识库
+│  ├─ activities/        # 按活动名称归档的介绍、指南与复盘
+│  ├─ artifacts/         # 问卷、外链、模板等可复用资源
+│  └─ knowledge/         # 组织协作与必要知识
+├─ people/               # 按读者身份组织的引导文档
+├─ guide/                # 维护与写作指南
 ├─ public/               # 图片、Logo、图标等静态资源
 └─ .vitepress/           # 站点配置与主题
 ```
@@ -53,22 +60,23 @@ npm run docs:preview   # 本地预览构建产物
 
 ## 如何添加一个词条
 
-1. 在 `docs/` 下对应分类目录新建 `.md` 文件（文件名用英文短横线）；
-2. 参考 [示例词条模板](docs/guide/sample-entry.md) 编写内容；
-3. 将词条登记到 `docs/.vitepress/config.mts` 的侧边栏 `sidebar` 中；
+1. 在 `docs/wiki/` 的对应分类目录新建 `.md` 文件（文件名用英文短横线）；
+2. 活动文档按「活动介绍、开展指南、流程总结」补齐，素材统一放到 `artifacts/`；
+3. 参考 [示例词条模板](docs/guide/sample-entry.md) 编写内容，并在底部填写双向链接；
+4. 将词条登记到 `docs/.vitepress/config.mts` 的侧边栏 `sidebar` 中；
 4. 提交并推送，网站自动更新。
 
 详细说明见站内「[贡献与部署](/guide/contribute)」页面。
 
 ## 部署
 
-推送到 `main` 分支后，`.github/workflows/deploy.yml` 自动构建并部署到 GitHub Pages。
+推送到 `main` 分支后，Cloudflare Pages 会自动部署；`.github/workflows/deploy.yml` 也提供可审计的 GitHub Actions 部署兜底。
 
 ## 技术栈
 
 - [VitePress](https://vitepress.dev/zh/) — 静态站点生成器
 - Markdown + MathJax — 写作语言与数学公式
-- GitHub Pages + GitHub Actions — 托管与自动部署
+- Cloudflare Pages + GitHub Actions — 托管与自动部署
 
 ## License
 

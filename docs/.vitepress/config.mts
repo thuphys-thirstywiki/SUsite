@@ -6,30 +6,27 @@ const base = '/'
 export default defineConfig({
   base,
 
-  title: '物理系学生会 Wiki',
-  description: '清华大学物理系学生会知识库 —— 组织、活动、学习与生活的百科全书',
+  title: '物理系学生会文档库',
+  description: '清华大学物理系学生会的 Wiki 与人员工作文档',
 
   lang: 'zh-CN',
   cleanUrls: true,
   lastUpdated: true,
 
   head: [
-    ['meta', { name: 'theme-color', content: '#5b4fae' }],
+    ['meta', { name: 'theme-color', content: '#087a72' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}logo.svg` }],
   ],
 
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: '物理系学生会 Wiki',
+    siteTitle: '物理系学生会文档库',
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '使用指南', link: '/guide/' },
-      { text: '技术扫盲', link: '/tech/' },
-      { text: '组织与制度', link: '/org/' },
-      { text: '活动百科', link: '/activities/' },
-      { text: '学习指南', link: '/study/' },
-      { text: '生活指南', link: '/life/' },
+      { text: 'Wiki', link: '/wiki/' },
+      { text: '人员文档', link: '/people/' },
+      { text: '维护指南', link: '/guide/' },
     ],
 
     sidebar: {
@@ -45,47 +42,32 @@ export default defineConfig({
           ],
         },
       ],
-      '/org/': [
-        {
-          text: '组织与制度',
-          items: [
-            { text: '概览', link: '/org/' },
-            { text: '部门介绍', link: '/org/departments' },
-            { text: '常用流程与模板', link: '/org/procedures' },
-          ],
-        },
+      '/wiki/': [
+        { text: 'Wiki', items: [
+          { text: 'Wiki 首页', link: '/wiki/' },
+          { text: '活动', link: '/wiki/activities/' },
+          { text: '可复用素材', link: '/wiki/artifacts/' },
+          { text: '组织知识', link: '/wiki/knowledge/' },
+        ] },
+        { text: '活动', items: [
+          { text: '迎新', link: '/wiki/activities/orientation/' },
+          { text: '学生节', link: '/wiki/activities/student-festival/' },
+          { text: '新生舞会', link: '/wiki/activities/freshman-ball/' },
+        ] },
       ],
-      '/activities/': [
-        {
-          text: '活动百科',
-          items: [
-            { text: '概览', link: '/activities/' },
-            { text: '活动筹备指南', link: '/activities/planning' },
-          ],
-        },
-      ],
-      '/tech/': [
-        {
-          text: '技术扫盲',
-          items: [
-            { text: '概览', link: '/tech/' },
-            { text: 'Git 基础', link: '/tech/git-basics' },
-            { text: '命令行基础', link: '/tech/bash-basics' },
-            { text: '编辑本 Wiki 实战', link: '/tech/edit-wiki' },
-          ],
-        },
-      ],
-      '/study/': [
-        {
-          text: '学习指南',
-          items: [{ text: '概览', link: '/study/' }],
-        },
-      ],
-      '/life/': [
-        {
-          text: '生活指南',
-          items: [{ text: '概览', link: '/life/' }],
-        },
+      '/people/': [
+        { text: '人员文档', items: [
+          { text: '从这里开始', link: '/people/' },
+          { text: '物理系同学', link: '/people/physics-students' },
+          { text: '学生会主席', link: '/people/president' },
+          { text: '主席团成员', link: '/people/executive-team' },
+        ] },
+        { text: '部门工作', items: [
+          { text: '文宣', link: '/people/departments/publicity' },
+          { text: '体育', link: '/people/departments/sports' },
+          { text: '生权', link: '/people/departments/student-rights' },
+          { text: '联络', link: '/people/departments/outreach' },
+        ] },
       ],
     },
 
