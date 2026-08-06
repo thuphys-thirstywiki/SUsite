@@ -26,6 +26,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '使用指南', link: '/guide/' },
+      { text: '技术扫盲', link: '/tech/' },
       { text: '组织与制度', link: '/org/' },
       { text: '活动百科', link: '/activities/' },
       { text: '学习指南', link: '/study/' },
@@ -61,6 +62,17 @@ export default defineConfig({
           items: [
             { text: '概览', link: '/activities/' },
             { text: '活动筹备指南', link: '/activities/planning' },
+          ],
+        },
+      ],
+      '/tech/': [
+        {
+          text: '技术扫盲',
+          items: [
+            { text: '概览', link: '/tech/' },
+            { text: 'Git 基础', link: '/tech/git-basics' },
+            { text: '命令行基础', link: '/tech/bash-basics' },
+            { text: '编辑本 Wiki 实战', link: '/tech/edit-wiki' },
           ],
         },
       ],

@@ -42,6 +42,12 @@ features:
     details: 校园设施、衣食住行、办事流程一站式查询
     link: /life/
   - icon:
+      src: /icons/tech.svg
+      alt: 技术
+    title: 技术扫盲
+    details: 零基础学 Git 与命令行，掌握投稿本 Wiki 的底层技能
+    link: /tech/
+  - icon:
       src: /icons/edit.svg
       alt: 编辑
     title: 人人可编辑

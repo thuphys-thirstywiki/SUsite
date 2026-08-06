@@ -26,6 +26,7 @@
 docs/
 ├─ index.md              # 首页
 ├─ guide/                # 使用指南（写作规范、示例模板）
+├─ tech/                 # 技术扫盲（Git / 命令行 / 编辑实战）
 ├─ org/                  # 组织与制度
 ├─ activities/           # 活动百科
 ├─ study/                # 学习指南
