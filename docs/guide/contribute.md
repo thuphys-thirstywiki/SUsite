@@ -67,6 +67,6 @@ sidebar: {
 ## 已完成的上线配置
 
 - ✅ `editLink` 已指向真实仓库 `thuphys-thirstywiki/SUsite`，页面可直接跳转在线编辑；
-- ✅ GitHub Actions 自动部署已启用，线上地址 https://thuphys-thirstywiki.github.io/SUsite/ ；
+- ✅ Cloudflare Pages 自动部署已启用，线上地址 https://thu-phys.com/ ；
 - ✅ `main` 分支保护已开启（PR 审核 + 仅管理员直推）；
-- ☐ （可选）配置自定义域名。
+- ✅ 自定义域名 `thu-phys.com` 已绑定。

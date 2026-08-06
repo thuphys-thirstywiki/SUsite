@@ -1,8 +1,7 @@
 import { defineConfig } from 'vitepress'
 
-// 部署到 GitHub Pages 项目站时，构建命令会注入 /<仓库名>/ 作为 base；
-// 本地预览或部署到 Vercel 时默认使用根路径 / 。
-const base = process.env.BASE_PATH || '/'
+// 站点部署在 Cloudflare Pages 根路径（https://thu-phys.com），base 固定为 /
+const base = '/'
 
 export default defineConfig({
   base,
