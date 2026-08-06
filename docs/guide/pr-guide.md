@@ -37,7 +37,7 @@ PR 需要 **1 人审核批准** 后才会合并。合并到 `main` 后，网站�
 
 ## 方式二：Fork（访客使用）
 
-1. 打开仓库 [hanselhan23/SUsite](https://github.com/hanselhan23/SUsite)，点击右上角 **Fork** 到自己账号；
+1. 打开仓库 [thuphys-thirstywiki/SUsite](https://github.com/thuphys-thirstywiki/SUsite)，点击右上角 **Fork** 到自己账号；
 2. 在自己的副本中修改或新增文件（网页操作同上）；
 3. 回到自己的仓库首页，点击 **Contribute → Open pull request**；
 4. 确认改动范围无误后，点击 **Create pull request**。
@@ -45,7 +45,7 @@ PR 需要 **1 人审核批准** 后才会合并。合并到 `main` 后，网站�
 ## 方式三：命令行（适合会 Git 的同学）
 
 ```bash
-git clone git@github.com:hanselhan23/SUsite.git
+git clone git@github.com:thuphys-thirstywiki/SUsite.git
 cd SUsite
 git checkout -b my-entry          # 创建并切换到新分支
 # 编辑或新增 Markdown 文件

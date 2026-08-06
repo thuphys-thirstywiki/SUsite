@@ -2,7 +2,7 @@
 
 清华大学物理系学生会的知识库与工作手册，基于 [VitePress](https://vitepress.dev/zh/) 构建。
 
-> 线上地址：https://hanselhan23.github.io/SUsite/
+> 线上地址：https://thuphys-thirstywiki.github.io/SUsite/
 
 ## 这是什么
 

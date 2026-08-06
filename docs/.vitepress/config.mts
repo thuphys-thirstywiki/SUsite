@@ -107,7 +107,7 @@ export default defineConfig({
 
     // 部署后替换为真实的仓库地址
     editLink: {
-      pattern: 'https://github.com/hanselhan23/SUsite/edit/main/docs/:path',
+      pattern: 'https://github.com/thuphys-thirstywiki/SUsite/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页',
     },
 
