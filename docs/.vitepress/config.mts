@@ -7,7 +7,7 @@ export default defineConfig({
   base,
 
   title: '物理系学生会文档库',
-  description: '清华大学物理系学生会的 Wiki 与人员工作文档',
+  description: '清华大学物理系学生会 Wiki',
 
   lang: 'zh-CN',
   cleanUrls: true,
@@ -25,49 +25,54 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'Wiki', link: '/wiki/' },
-      { text: '人员文档', link: '/people/' },
-      { text: '维护指南', link: '/guide/' },
+      { text: '按身份阅读', link: '/wiki/people/' },
+      { text: '维护指南', link: '/wiki/guide/' },
     ],
 
     sidebar: {
-      '/guide/': [
+      '/wiki/': [
         {
-          text: '使用指南',
+          text: 'Wiki',
           items: [
-            { text: '关于本站', link: '/guide/' },
-            { text: 'Markdown 写作指南', link: '/guide/markdown' },
-            { text: '示例词条（模板）', link: '/guide/sample-entry' },
-            { text: '投稿与 Pull Request', link: '/guide/pr-guide' },
-            { text: '贡献与部署', link: '/guide/contribute' },
+            { text: '目录', link: '/wiki/' },
+            { text: '按身份阅读', link: '/wiki/people/' },
+            { text: '活动', link: '/wiki/activities/' },
+            { text: '可复用素材', link: '/wiki/artifacts/' },
+            { text: '组织知识', link: '/wiki/knowledge/' },
+            { text: '维护指南', link: '/wiki/guide/' },
+            { text: '技术扫盲', link: '/wiki/tech/' },
           ],
         },
-      ],
-      '/wiki/': [
-        { text: 'Wiki', items: [
-          { text: 'Wiki 首页', link: '/wiki/' },
-          { text: '活动', link: '/wiki/activities/' },
-          { text: '可复用素材', link: '/wiki/artifacts/' },
-          { text: '组织知识', link: '/wiki/knowledge/' },
-        ] },
-        { text: '活动', items: [
-          { text: '迎新', link: '/wiki/activities/orientation/' },
-          { text: '学生节', link: '/wiki/activities/student-festival/' },
-          { text: '新生舞会', link: '/wiki/activities/freshman-ball/' },
-        ] },
-      ],
-      '/people/': [
-        { text: '人员文档', items: [
-          { text: '从这里开始', link: '/people/' },
-          { text: '物理系同学', link: '/people/physics-students' },
-          { text: '学生会主席', link: '/people/president' },
-          { text: '主席团成员', link: '/people/executive-team' },
-        ] },
-        { text: '部门工作', items: [
-          { text: '文宣', link: '/people/departments/publicity' },
-          { text: '体育', link: '/people/departments/sports' },
-          { text: '生权', link: '/people/departments/student-rights' },
-          { text: '联络', link: '/people/departments/outreach' },
-        ] },
+        {
+          text: '按身份阅读',
+          items: [
+            { text: '物理系同学', link: '/wiki/people/physics-students' },
+            { text: '学生会主席', link: '/wiki/people/president' },
+            { text: '主席团成员', link: '/wiki/people/executive-team' },
+            { text: '文宣', link: '/wiki/people/departments/publicity' },
+            { text: '体育', link: '/wiki/people/departments/sports' },
+            { text: '生权', link: '/wiki/people/departments/student-rights' },
+            { text: '联络', link: '/wiki/people/departments/outreach' },
+          ],
+        },
+        {
+          text: '活动',
+          items: [
+            { text: '迎新', link: '/wiki/activities/orientation/' },
+            { text: '学生节', link: '/wiki/activities/student-festival/' },
+            { text: '新生舞会', link: '/wiki/activities/freshman-ball/' },
+          ],
+        },
+        {
+          text: '维护指南',
+          items: [
+            { text: '关于本站', link: '/wiki/guide/' },
+            { text: 'Markdown 写作指南', link: '/wiki/guide/markdown' },
+            { text: '示例词条（模板）', link: '/wiki/guide/sample-entry' },
+            { text: '投稿与 Pull Request', link: '/wiki/guide/pr-guide' },
+            { text: '贡献与部署', link: '/wiki/guide/contribute' },
+          ],
+        },
       ],
     },
 
