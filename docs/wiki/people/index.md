@@ -4,7 +4,7 @@
 
 | 你是谁 | 从这里开始 |
 | --- | --- |
-| 物理系同学 | [学生会能为你做什么](/wiki/people/physics-students) |
-| 主席团成员 | [主席团工作引导](/wiki/people/president) |
-| 学生会部长 | [部门统筹工作](/wiki/people/executive-team) |
-| 学生会干事 | [部门工作细节](/wiki/people/departments) |
+| 物理系同学 | [学生会能为你做什么](/wiki/people/student) |
+| 主席团成员 | [主席团工作引导](/wiki/people/zhuxituan) |
+| 学生会部长 | [部门统筹工作](/wiki/people/buzhang) |
+| 学生会干事 | [部门工作细节](/wiki/people/ganshi) |

@@ -33,40 +33,48 @@ export default defineConfig({
       '/wiki/': [
         {
           text: 'Wiki',
+          collapsed: true,
           items: [
             { text: '目录', link: '/wiki/' },
-            { text: '按身份阅读', link: '/wiki/people/' },
-            { text: '活动', link: '/wiki/activities/' },
             { text: '可复用素材', link: '/wiki/artifacts/' },
             { text: '组织知识', link: '/wiki/knowledge/' },
+            { text: '活动', link: '/wiki/activities/' },
             { text: '维护指南', link: '/wiki/guide/' },
             { text: '技术扫盲', link: '/wiki/tech/' },
           ],
         },
         {
-          text: '按身份阅读',
+          text: '按身份阅读', link: '/wiki/people/',
           items: [
-            { text: '物理系同学', link: '/wiki/people/physics-students' },
-            { text: '学生会主席', link: '/wiki/people/president' },
-            { text: '主席团成员', link: '/wiki/people/executive-team' },
-            { text: '文宣', link: '/wiki/people/departments/publicity' },
-            { text: '体育', link: '/wiki/people/departments/sports' },
-            { text: '生权', link: '/wiki/people/departments/student-rights' },
-            { text: '联络', link: '/wiki/people/departments/outreach' },
+            { text: '物理系同学', link: '/wiki/people/student' },
+            { text: '学生会主席', link: '/wiki/people/zhuxituan' },
+            { text: '学生会部长', link: '/wiki/people/buzhang' },
+            { text: '学生会干事', link: '/wiki/people/ganshi', collapsed: true,
+              items: [
+            { text: '生权部', link: '/wiki/info/departments/shengquan/' },
+            { text: '文宣部', link: '/wiki/info/departments/wenxuan/' },
+            { text: '体育部', link: '/wiki/info/departments/tiyu/' },
+            { text: '联络部', link: '/wiki/info/departments/lianluo/' },
+          ],
+             },
+          ],
+        },
+        
+        {
+          text: '活动', link: '/wiki/activities/',
+          collapsed: true,
+          items: [
+            { text: '迎新', link: '/wiki/activities/yingxin/' },
+            { text: '学生节', link: '/wiki/activities/xueshengjie/' },
+            { text: '新生舞会', link: '/wiki/activities/wuhui/' },
+            { text: '跨校联谊', link: '/wiki/activities/lianyi/' },
+            { text: '系领导接待日', link: '/wiki/activities/xilingdaojiedairi/' },
           ],
         },
         {
-          text: '活动',
+          text: '维护指南', link: '/wiki/guide/',
+          collapsed: true,
           items: [
-            { text: '迎新', link: '/wiki/activities/orientation/' },
-            { text: '学生节', link: '/wiki/activities/student-festival/' },
-            { text: '新生舞会', link: '/wiki/activities/freshman-ball/' },
-          ],
-        },
-        {
-          text: '维护指南',
-          items: [
-            { text: '关于本站', link: '/wiki/guide/' },
             { text: 'Markdown 写作指南', link: '/wiki/guide/markdown' },
             { text: '示例词条（模板）', link: '/wiki/guide/sample-entry' },
             { text: '投稿与 Pull Request', link: '/wiki/guide/pr-guide' },

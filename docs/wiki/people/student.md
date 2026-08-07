@@ -8,7 +8,7 @@
 
 | 场景 | 去哪里 |
 | --- | --- |
-| 刚入学，想认识同学 | [迎新](/wiki/activities/orientation/) |
-| 想参与面向新生的活动 | [新生舞会](/wiki/activities/freshman-ball/) |
-| 对校园生活或权益有建议 | [生权部门工作](/wiki/people/departments/student-rights) |
+| 刚入学，想认识同学 | [迎新](/wiki/activities/yingxin/) |
+| 想参与面向新生的活动 | [新生舞会](/wiki/activities/wuhui/) |
+| 对校园生活或权益有建议 | [生权部工作](/wiki/info/departments/shengquan/) |
 | 想了解学生会做什么 | [组织知识](/wiki/knowledge/) |

@@ -7,7 +7,7 @@
 
 除此以外，你还负责在学生会各个活动前、中、后，监督和推进你们部门的各项任务。请通过下面的链接了解你的部门职责：
 
-- [生权部](/wiki/info/departments/shengquan)
-- [文宣部](/wiki/info/departments/wenxuan)
-- [体育部](/wiki/info/departments/tiyu)
-- [联络部](/wiki/info/departments/lianluo)
+- [生权部](/wiki/info/departments/shengquan/)
+- [文宣部](/wiki/info/departments/wenxuan/)
+- [体育部](/wiki/info/departments/tiyu/)
+- [联络部](/wiki/info/departments/lianluo/)

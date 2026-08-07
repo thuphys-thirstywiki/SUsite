@@ -4,7 +4,7 @@
 
 请通过下面的链接，找到你所在的部门职责介绍：
 
-- [生权部](/wiki/info/departments/shengquan)
-- [文宣部](/wiki/info/departments/wenxuan)
-- [体育部](/wiki/info/departments/tiyu)
-- [联络部](/wiki/info/departments/lianluo)
+- [生权部](/wiki/info/departments/shengquan/)
+- [文宣部](/wiki/info/departments/wenxuan/)
+- [体育部](/wiki/info/departments/tiyu/)
+- [联络部](/wiki/info/departments/lianluo/)

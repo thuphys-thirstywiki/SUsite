@@ -15,7 +15,7 @@
 
 <DocumentLinks
   :related="[
-    { text: '迎新', link: '/wiki/activities/orientation/', note: '年度首个高协同活动' },
+    { text: '迎新', link: '/wiki/activities/yingxin/', note: '年度首个高协同活动' },
     { text: '活动目录', link: '/wiki/activities/', note: '查看所有活动沉淀' },
     { text: '组织知识', link: '/wiki/knowledge/', note: '制度与协作背景' }
   ]"
