@@ -38,8 +38,7 @@ npm run docs:build    # 生成静态站点到 docs/.vitepress/dist
 npm run docs:preview  # 本地预览构建产物
 ```
 
-- 推送代码到 GitHub `main` 分支后，Cloudflare Pages 会自动构建并部署；
-- `.github/workflows/deploy.yml` 可作为显式部署工作流，需在仓库中配置 `CLOUDFLARE_API_TOKEN`、`CLOUDFLARE_ACCOUNT_ID` 两个 Actions Secret，以及 `CLOUDFLARE_PAGES_PROJECT` Actions Variable。
+- 推送代码到 GitHub `main` 分支后，Cloudflare Pages 会自动构建并部署。
 
 ## 修改侧边栏 / 导航
 
