@@ -16,8 +16,10 @@ export default defineConfig({
   head: [
     ['meta', { name: 'theme-color', content: '#087a72' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}logo.svg` }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource-variable/noto-sans-sc/index.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource-variable/inter/index.css' }],
   ],
-
+  
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: '物理系学生会文档库',
