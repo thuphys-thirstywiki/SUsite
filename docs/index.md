@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: 物理系学生会档案
-  # tagline: 一切皆 Wiki。从你的身份开始读。
+  tagline: Version：43.0.1
   image:
     src: /logo.svg
     alt: 物理系学生会档案
