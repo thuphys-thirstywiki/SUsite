@@ -10,7 +10,7 @@
 | [学生节](/wiki/activities/xueshengjie/) | 介绍、舞台流程、素材入口 | 文宣、联络、主席团 |
 | [新生舞会](/wiki/activities/wuhui/) | 介绍、筹备清单、复盘入口 | 文宣、体育、干事 |
 | [跨校联谊](/wiki/activities/lianyi/) | 介绍、筹备清单、复盘入口 | 联络、外联 |
-| [西领道接待日](/wiki/activities/xilingdaojiedairi/) | 介绍、执行指南、复盘入口 | 迎新负责人、干事 |
+| [系领导接待日](/wiki/activities/xilingdaojiedairi/) | 介绍、执行指南、复盘入口 | 迎新负责人、干事 |
 
 ## 新建活动的最小结构
 
