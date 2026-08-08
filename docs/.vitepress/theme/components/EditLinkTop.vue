@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useData } from 'vitepress'
+import { computed, nextTick, onMounted, ref } from 'vue'
+import { onContentUpdated, useData } from 'vitepress'
 
 const { theme, page, frontmatter } = useData()
 
@@ -16,11 +16,28 @@ const editLink = computed(() => {
 const show = computed(
   () => editLink.value && frontmatter.value.editLink !== false
 )
+
+// 移动端：编辑按钮跟随本地导航栏（"本页目录"按钮右侧）
+const isMobile = ref(false)
+const localNav = ref<HTMLElement | null>(null)
+
+function findLocalNav() {
+  localNav.value = document.querySelector('.VPLocalNav .container') as HTMLElement | null
+}
+
+onMounted(() => {
+  const mq = window.matchMedia('(max-width: 959px)')
+  isMobile.value = mq.matches
+  mq.addEventListener('change', (e) => (isMobile.value = e.matches))
+  findLocalNav()
+})
+
+onContentUpdated(() => nextTick(findLocalNav))
 </script>
 
 <template>
   <a
-    v-if="show"
+    v-if="show && !isMobile"
     class="vp-edit-link-top"
     :href="editLink.url"
     target="_blank"
@@ -29,6 +46,18 @@ const show = computed(
     <span class="vpi-square-pen edit-link-icon" />
     {{ editLink.text }}
   </a>
+
+  <Teleport v-if="show && isMobile && localNav" :to="localNav">
+    <a
+      class="vp-edit-link-mobile"
+      :href="editLink.url"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <span class="vpi-square-pen edit-link-icon" />
+      <span class="edit-text">{{ editLink.text }}</span>
+    </a>
+  </Teleport>
 </template>
 
 <style scoped>

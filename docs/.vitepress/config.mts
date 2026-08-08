@@ -14,7 +14,7 @@ export default defineConfig({
   lastUpdated: true,
 
   head: [
-    ['meta', { name: 'theme-color', content: '#087a72' }],
+    ['meta', { name: 'theme-color', content: '#3270b9' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}logo.svg` }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource-variable/noto-sans-sc/index.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource-variable/inter/index.css' }],
