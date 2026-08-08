@@ -1,4 +1,4 @@
-# 人员导引
+# <img class="page-icon" src="/icons/people.svg" alt="" />人员导引
 
 无论你是谁，从这里开始，你都可以找到自己需要的文档。
 

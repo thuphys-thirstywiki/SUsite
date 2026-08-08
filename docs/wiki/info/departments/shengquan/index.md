@@ -1,4 +1,4 @@
-# 生权部
+# <img class="page-icon" src="/icons/life.svg" alt="" />生权部
 
 生权部（生活权益部）为同学们提供生活服务与权益反馈。本页索引现有板块：
 

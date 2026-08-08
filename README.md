@@ -34,9 +34,11 @@ docs/
 │  ├─ knowledge/         # 组织知识
 │  ├─ guide/             # 维护与写作指南
 │  └─ tech/              # 技术扫盲
-├─ public/               # 静态资源
+├─ public/               # 静态资源（logo、图标等）
 └─ .vitepress/           # 站点配置与主题
 ```
+
+> 站点默认使用 `public/logo.svg` 作为 logo 与 favicon。仓库另附有可选的学生会 logo（`public/logo.jpg`），如需使用，将 `docs/.vitepress/config.mts` 中的 `themeConfig.logo`、`head` 里的 favicon 链接及 `docs/index.md` 首页 hero 的 `image.src` 改为 `/logo.jpg` 即可。
 
 ## 本地开发
 

@@ -1,4 +1,4 @@
-# 可复用素材
+# <img class="page-icon" src="/icons/artifacts.svg" alt="" />可复用素材
 Wiki 的可复用素材包含：历届学生会工作文档（待上传）、问卷等共享文档链接、云盘链接、Git 仓库等等。
 
 ## 共享文档链接

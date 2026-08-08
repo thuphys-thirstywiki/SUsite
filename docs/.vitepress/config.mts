@@ -19,7 +19,7 @@ export default defineConfig({
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource-variable/noto-sans-sc/index.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource-variable/inter/index.css' }],
   ],
-  
+
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: '物理系学生会文档库',
@@ -47,6 +47,7 @@ export default defineConfig({
         },
         {
           text: '按身份阅读', link: '/wiki/people/',
+          collapsed: true,
           items: [
             { text: '物理系同学', link: '/wiki/people/student' },
             { text: '学生会主席', link: '/wiki/people/zhuxituan' },

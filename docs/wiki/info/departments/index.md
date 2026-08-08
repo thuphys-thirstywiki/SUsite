@@ -1,4 +1,4 @@
-# 学生会部门
+# <img class="page-icon" src="/icons/org.svg" alt="" />学生会部门
 
 学生会共有四个部门：
 

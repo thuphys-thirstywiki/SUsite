@@ -1,4 +1,4 @@
-# 关于本站
+# <img class="page-icon" src="/icons/edit.svg" alt="" />关于本站
 
 基于 [VitePress](https://vitepress.dev/zh/) 的静态维基。所有词条都是 `docs/wiki/` 下的 Markdown 文件。
 

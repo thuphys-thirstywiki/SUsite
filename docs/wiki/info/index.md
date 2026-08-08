@@ -1,4 +1,4 @@
-# 组织信息
+# <img class="page-icon" src="/icons/org.svg" alt="" />组织信息
 
 记录有用的长期信息。
 
