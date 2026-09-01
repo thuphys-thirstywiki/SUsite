@@ -101,3 +101,132 @@
 
 /* 板块页标题左侧图标 */
 .page-icon { display: inline-block; width: 30px; height: 30px; margin-right: 10px; vertical-align: -5px; }
+
+/* ============================================================
+   高对比度模式（对齐 GitHub 高对比度主题观感）
+   - 由导航栏 ContrastToggle 切换，html.hc 生效，可与深色模式叠加
+   - 亮色对应 GitHub light_high_contrast：纯白底、近黑正文 (#010409)、
+     深蓝灰边框 (#667399)、深蓝链接 (#03449b)
+   - 暗色对应 GitHub dark_high_contrast：#0a0c10 底、亮字 (#f0f3f6)、
+     亮灰边框 (#7a828e)、亮蓝链接 (#71b7ff)
+   ============================================================ */
+
+/* 开关按钮（桌面端位于深色模式开关右侧） */
+.su-contrast-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+  border-radius: 50%;
+  color: var(--vp-c-text-2);
+  cursor: pointer;
+  transition: color 0.25s, background-color 0.25s;
+}
+.su-contrast-toggle:hover {
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-default-soft);
+}
+.su-contrast-toggle.on {
+  color: var(--vp-c-brand-1);
+}
+.su-contrast-toggle:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+/* 移动端展开菜单中的开关 */
+.VPNavBarScreen .su-contrast-toggle {
+  width: 40px;
+  height: 40px;
+  margin: 8px 0 0;
+}
+
+/* ---------- 高对比度 · 亮色（GitHub light_high_contrast） ---------- */
+html.hc {
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f5f7f9;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #f5f7f9;
+  --vp-c-bg-mute: #e9edf3;
+
+  --vp-c-border: #667399;
+  --vp-c-divider: #667399;
+  --vp-c-gutter: #667399;
+
+  --vp-c-text-1: #010409;
+  --vp-c-text-2: #3e4751;
+  --vp-c-text-3: #57606a;
+
+  --vp-c-gray-1: #24292f;
+  --vp-c-gray-2: #dfe4eb;
+  --vp-c-gray-3: #e7ebf1;
+  --vp-c-gray-soft: rgba(110, 119, 129, 0.2);
+
+  --vp-c-brand-1: #03449b;
+  --vp-c-brand-2: #0550ae;
+  --vp-c-brand-3: #0969da;
+  --vp-c-brand-soft: rgba(9, 105, 218, 0.12);
+
+  --vp-c-green-1: #026d03;
+  --vp-c-yellow-1: #8a6100;
+  --vp-c-red-1: #a40e26;
+  --vp-c-purple-1: #622cbc;
+}
+
+/* ---------- 高对比度 · 暗色（GitHub dark_high_contrast） ---------- */
+html.hc.dark {
+  --vp-c-bg: #0a0c10;
+  --vp-c-bg-alt: #090c12;
+  --vp-c-bg-elv: #0a0c10;
+  --vp-c-bg-soft: #10151d;
+  --vp-c-bg-mute: #161d27;
+
+  --vp-c-border: #7a828e;
+  --vp-c-divider: #7a828e;
+  --vp-c-gutter: #7a828e;
+
+  --vp-c-text-1: #f0f3f6;
+  --vp-c-text-2: #c0c7cf;
+  --vp-c-text-3: #99a2ad;
+
+  --vp-c-gray-1: #f0f3f6;
+  --vp-c-gray-2: #1c2129;
+  --vp-c-gray-3: #161b22;
+  --vp-c-gray-soft: rgba(139, 148, 158, 0.2);
+
+  --vp-c-brand-1: #71b7ff;
+  --vp-c-brand-2: #91caff;
+  --vp-c-brand-3: #1f6feb;
+  --vp-c-brand-soft: rgba(113, 183, 255, 0.16);
+
+  --vp-c-green-1: #3fb950;
+  --vp-c-yellow-1: #d29922;
+  --vp-c-red-1: #ff85a2;
+  --vp-c-purple-1: #d2a8ff;
+}
+
+/* ---------- 高对比度下的组件增强 ---------- */
+
+/* 提示容器加显眼边框（GitHub 高对比度 Alert 样式，左侧加粗色条） */
+html.hc .vp-custom-block {
+  border: 1px solid var(--vp-c-border);
+  border-left-width: 4px;
+}
+html.hc .vp-custom-block.tip { border-color: var(--vp-c-brand-1); }
+html.hc .vp-custom-block.warning { border-color: var(--vp-c-yellow-1); }
+html.hc .vp-custom-block.danger,
+html.hc .vp-custom-block.caution { border-color: var(--vp-c-red-1); }
+html.hc .vp-custom-block.important { border-color: var(--vp-c-purple-1); }
+
+/* 代码块加边框 */
+html.hc .vp-doc div[class*='language-'] {
+  border: 1px solid var(--vp-c-border);
+}
+
+/* 更醒目的键盘焦点环 */
+html.hc :focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}

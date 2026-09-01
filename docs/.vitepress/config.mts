@@ -15,6 +15,12 @@ export default defineConfig({
 
   head: [
     ['meta', { name: 'theme-color', content: '#3270b9' }],
+    // 高对比度模式：首屏前应用已保存的偏好，未手动选择时跟随系统 prefers-contrast
+    [
+      'script',
+      {},
+      `;(function(){try{var p=localStorage.getItem('su-hc');if(p==='1'||(p===null&&window.matchMedia('(prefers-contrast: more)').matches)){document.documentElement.classList.add('hc')}}catch(e){}})()`,
+    ],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}logo.svg` }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource-variable/noto-sans-sc/index.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fontsource-variable/inter/index.css' }],
