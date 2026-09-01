@@ -68,6 +68,7 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: '迎新', link: '/wiki/activities/yingxin/' },
+            { text: '快乐夜', link: '/wiki/activities/kuaileye/' },
             { text: '学生节', link: '/wiki/activities/xueshengjie/' },
             { text: '新生舞会', link: '/wiki/activities/wuhui/' },
             { text: '跨校联谊', link: '/wiki/activities/lianyi/' },

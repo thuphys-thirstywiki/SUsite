@@ -7,7 +7,7 @@
 | 活动 | 当前沉淀 | 面向谁 |
 | --- | --- | --- |
 | [迎新](/wiki/activities/yingxin/) | 介绍、执行指南、复盘入口 | 迎新负责人、干事 |
-|[快乐夜](/wiki/activities/kuaileye/)|介绍、活动方案、复盘入口|志愿者、联络、文宣|
+| [快乐夜](/wiki/activities/kuaileye/)|介绍、活动方案、复盘入口|志愿者、联络、文宣|
 | [学生节](/wiki/activities/xueshengjie/) | 介绍、舞台流程、素材入口 | 文宣、联络、主席团 |
 | [新生舞会](/wiki/activities/wuhui/) | 介绍、筹备清单、复盘入口 | 文宣、体育、干事 |
 | [跨校联谊](/wiki/activities/lianyi/) | 介绍、筹备清单、复盘入口 | 联络、外联 |
