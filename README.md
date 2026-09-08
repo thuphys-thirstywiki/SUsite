@@ -68,13 +68,13 @@ npm run docs:preview   # 本地预览构建产物
 
 ## 部署
 
-推送到 `main` 分支后，Cloudflare Pages 会自动部署；`.github/workflows/deploy.yml` 也提供可审计的 GitHub Actions 部署兜底。
+推送到 `main` 分支后，Cloudflare Pages 会自动构建并部署，无需手动发布；仓库不再使用 GitHub Actions 工作流。
 
 ## 技术栈
 
 - [VitePress](https://vitepress.dev/zh/) — 静态站点生成器
 - Markdown + MathJax — 写作语言与数学公式
-- Cloudflare Pages + GitHub Actions — 托管与自动部署
+- Cloudflare Pages — 托管与自动部署
 
 ## License
 
